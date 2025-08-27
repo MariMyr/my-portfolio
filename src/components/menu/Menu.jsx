@@ -1,8 +1,11 @@
+import ThemeToggle from "../themeToggle/ThemeToggle";
 import "./menu.css";
 
 function Menu() {
   return (
-    <div>Menu</div>
+    <section>
+      <ThemeToggle />
+    </section>
   )
 }
 
