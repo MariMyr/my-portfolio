@@ -1,0 +1,18 @@
+.main__image {
+    background-image: url("../../assets/images/background_light.png");
+    /* background-image: url("../../assets/images/background_dark.png"); */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ===== Tablets (t.ex. 600px och uppåt) ===== */
+/* @media (min-width: 600px) {
+
+} */
+
+/* ===== Tablets (t.ex. 600px och uppåt) ===== */
+/* @media (min-width: 600px) {
+
+} */
