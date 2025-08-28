@@ -6,8 +6,8 @@ import ContactForm from "../../components/contactform/ContactForm";
 import Footer from "../../components/footer/Footer";
 import backgroundLight from "../../assets/images/background_light.png"
 import backgroundDark from "../../assets/images/background_dark.png"
-import Menu from "../../components/menu/Menu";
 import { useEffect, useState } from "react";
+import Hero from "../../components/hero/Hero";
 
 function HomePage() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
@@ -35,7 +35,7 @@ function HomePage() {
       <article className="main__image"
       style={{ backgroundImage: `url(${backgroundImage})`}}>
         <Header />
-        <Menu />
+        <Hero />
         <About />
         <Projects />
         <ContactForm />
