@@ -4,15 +4,9 @@ import { useEffect, useState } from "react";
 function ThemeToggle() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
-
   useEffect(() => {
-    // Rensa gamla klasser
     document.body.classList.remove("light-theme", "dark-theme");
-
-    // Lägg till nuvarande tema
     document.body.classList.add(`${theme}-theme`);
-
-    // Spara i localStorage
     localStorage.setItem("theme", theme);
   }, [theme]);
 
@@ -21,10 +15,12 @@ function ThemeToggle() {
   };
 
   return (
-    <button className="theme-toggle" onClick={toggleTheme}>
-      {theme === "light" ? "🌙" : "☀️"}
-    </button>
-  )
+    <section className={`theme-toggle-wrapper ${theme}`}>
+      <button className="theme-toggle-button" onClick={toggleTheme}>
+        {theme === "light" ? "🌙" : "☀️"}
+      </button>
+    </section>
+  );
 }
 
 export default ThemeToggle;

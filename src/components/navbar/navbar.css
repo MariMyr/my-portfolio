@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar__left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar__right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__links {
+  padding: 2rem;
+  display: none;
+  color: var(--primary);
+  font-family: "Karla", sans-serif;
+  font-size: 22px;
+}
+
+.navbar__links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Responsivitet */
+@media (min-width: 768px) {
+  .navbar__links {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

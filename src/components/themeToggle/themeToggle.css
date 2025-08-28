@@ -1,6 +1,41 @@
-.theme-toggle {
-  font-size: 2rem;
-  background: transparent;
-  border: none;
+.theme-toggle-wrapper {
+  width: 60px;
+  height: 30px;
+  background-color: var(--secondary);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle-button {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, background-color 0.3s;
+  font-size: 22px;
+}
+
+/* Flytta knappen till höger i dark-mode */
+.theme-toggle-wrapper.dark .theme-toggle-button {
+  transform: translateX(30px);
+}
+
+/* Byt bakgrund för wrapper i dark-mode */
+.theme-toggle-wrapper.dark {
+  background-color: var(--secondary);
+}
+
+
+/* Responsivitet */
+@media (min-width: 768px) {
+  .theme-toggle {
+    font-size: 3rem;
+  }
 }
