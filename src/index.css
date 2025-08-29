@@ -44,21 +44,50 @@ body.dark-theme {
   font-weight: normal;
   font-style: normal;
 }
-h1 {
+h1,
+h2,
+h3,
+p,
+a {
   font-family: "Karla", sans-serif;
+}
+h1 {
   font-weight: bold;
-  font-size: 24px;
-  color: var(--primary)
+  font-size: 26px;
+  color: var(--primary);
 }
 h2 {
-  font-family: "Karla", sans-serif;
   font-weight: bold;
   font-size: 22px;
-  color: var(--secondary)
+  color: var(--secondary);
+}
+h3 {
+  font-size: 20px;
+  color: var(--secondary);
 }
 p {
-  font-family: "Karla", sans-serif;
   font-weight: normal;
   font-size: 16px;
 }
 
+/* Responsivitet */
+@media (min-width: 768px) {
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  color: var(--primary);
+}
+h2 {
+  font-weight: bold;
+  font-size: 26px;
+  color: var(--secondary);
+}
+h3 {
+  font-size: 28px;
+  color: var(--secondary);
+}
+p {
+  font-weight: normal;
+  font-size: 22px;
+}
+}

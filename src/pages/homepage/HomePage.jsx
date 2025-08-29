@@ -35,7 +35,7 @@ function HomePage() {
       <article className="main__image"
       style={{ backgroundImage: `url(${backgroundImage})`}}>
         <Header />
-        <Hero />
+        <Hero theme={theme} />
         <About />
         <Projects />
         <ContactForm />
