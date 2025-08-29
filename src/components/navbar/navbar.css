@@ -36,11 +36,27 @@
 
 /* Responsivitet */
 @media (min-width: 768px) {
-  .navbar__links {
+  .navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 7rem;
+  }
+  .navbar__left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
   }
 
-  .hamburger {
-    display: none;
+  .navbar__right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+  }
+  .navbar__links {
+    display: flex;
+    font-size: 26px;
   }
 }
