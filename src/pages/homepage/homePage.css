@@ -1,12 +1,12 @@
 .mainPage {
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
 }
 .main__image {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 /* ===== Tablets (t.ex. 600px och uppåt) ===== */
