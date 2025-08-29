@@ -1,3 +1,4 @@
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaFigma, FaGitAlt } from "react-icons/fa";
 import { useState } from "react";
 import "./about.css";
 
@@ -31,11 +32,11 @@ function About() {
       </button>
       <h3 className="about__subtitle">Tech Stack</h3>
       <ul className="about__list">
-        <li>HTML & CSS</li>
-        <li>JavaScript / React</li>
-        <li>Node.js / Express / MongoDB</li>
-        <li>UX / UI Design (Figma)</li>
-        <li>Git, GitHub & Agile methods</li>
+        <li><FaCss3Alt /> HTML & CSS <FaCss3Alt /></li>
+        <li><FaJs /> JavaScript / React <FaReact /></li>
+        <li><FaNodeJs /> Node.js / Express / MongoDB</li>
+        <li>UX / UI Design <FaFigma /> Figma</li>
+        <li><FaGitAlt /> Git, GitHub & Agile methods</li>
       </ul>
       </section>
     </section>
