@@ -1,6 +1,15 @@
 .footer {
-    font-family: "Karla", sans-serif;
+  font-family: "Karla", sans-serif;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 1.5rem 0 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    font-weight: bold;
+    font-size: 20px;
     color: var(--primary);
-    margin-top: 2rem;
-    padding-left: 1rem;
+    padding: 5rem 0 3rem 0;
+  }
 }
