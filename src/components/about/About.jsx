@@ -1,18 +1,43 @@
+import { useState } from "react";
 import "./about.css";
 
 function About() {
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <section className="about">
-      <h2 className="about__title">Om mig</h2>
+      <section className="about__content">
+      <h3 className="about__title">About me</h3>
       <p className="about__text">
-        Jag är en frontendutvecklare som nyligen studerat HTML, CSS, JavaScript,
-        React och Node.js med MongoDB.
+        Hi! I'm Mari, a Frontend Developer in the making, currently studying at
+        Folkuniversitetet in Gothenburg. During my first year, I gained
+        experience across a wide range of topics and technologies.
       </p>
+      {showMore && (
+        <>
+          <p className="about__text">
+            This year, I am continuing to build on that foundation by exploring
+            cloud deployment, AI integration in modern applications, and
+            fullstack development with TypeScript. My skill set covers both
+            frontend and backend, with a strong focus on clean code,
+            user-friendly design, and agile collaboration. I enjoy creating
+            applications that are not only functional but also accessible and
+            visually engaging.
+          </p>
+        </>
+      )}
+      <button className="about__button" onClick={() => setShowMore(!showMore)}>
+        {showMore ? "Show less" : "Show more"}
+      </button>
+      <h3 className="about__subtitle">Tech Stack</h3>
       <ul className="about__list">
-        <li>HTML / CSS</li>
+        <li>HTML & CSS</li>
         <li>JavaScript / React</li>
         <li>Node.js / Express / MongoDB</li>
+        <li>UX / UI Design (Figma)</li>
+        <li>Git, GitHub & Agile methods</li>
       </ul>
+      </section>
     </section>
   );
 }
