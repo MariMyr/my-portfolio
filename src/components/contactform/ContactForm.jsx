@@ -1,33 +1,45 @@
 import "./contactForm.css";
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 function ContactForm() {
   return (
-    <section className="contactform">
-      <h2 className="contactform__title">Kontakta mig</h2>
-      <form className="form">
-        <input
-          type="text"
-          name="name"
-          placeholder="Namn"
-          className="contactform__input"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="E-post"
-          className="contactform__input"
-        />
-        <textarea
-          name="message"
-          placeholder="Meddelande"
-          rows="4"
-          className="contactform__textarea"
-        />
-        <button type="submit" className="contactform__button">
-          Skicka
-        </button>
-      </form>
+    <section className="contact__container">
+    <section className="contact-section">
+      <h2 className="contactform__title">Contact me</h2>
+      <p className="availability">Looking for a LIA-pratice week 2-10 & 14-23 2026</p>
+      <section className="contact-buttons">
+        <a
+          href="mari.myr@gmail.com"
+          className="contact-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaEnvelope style={{ marginRight: '0.5rem' }}/>
+           Email me
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/mari-myrmoen-74714b145/"
+          className="contact-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin style={{ marginRight: '0.5rem' }}/>
+           LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/MariMyr"
+          className="contact-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub style={{ marginRight: '0.5rem' }}/>
+           GitHub
+        </a>
+      </section>
     </section>
+  </section>
   );
 }
 
