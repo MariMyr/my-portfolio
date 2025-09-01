@@ -7,7 +7,7 @@ import backgroundLight from "../../assets/images/background_light.png"
 import backgroundDark from "../../assets/images/background_dark.png"
 import { useEffect, useState } from "react";
 import Hero from "../../components/hero/Hero";
-import ContactSection from "../../components/contactSection/ContactSection";
+import ContactSection from "../../components/ContactSection/ContactSection";
 
 function HomePage() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
