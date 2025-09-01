@@ -45,3 +45,9 @@
 .light-theme .hamburger__menu a {
   color: var(--primary);
 }
+
+@media (min-width: 550px) and (max-width: 768px) {
+  .hamburger__icon{
+    font-size: 5rem;
+  }  
+}
