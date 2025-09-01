@@ -7,31 +7,15 @@ function Hero({theme}) {
   return (
     <section className="hero">
       <article className="heroimg__container">
-      <h1 className="hero">Mari Myrmoen</h1>
+      <h1>Mari Myrmoen</h1>
       <img
         src={profileImg}
         alt="Profilbild av Mari Myrmoen"
         className="profile__img"
       />
       </article>
-      <h3 className="hero">Frontend Developer in the making.</h3>
-      <article className="hero__links">
-        <a href="https://github.com/MariMyr" className="hero__link">
-          GitHub
-        </a>
-        <a href="#" className="hero__link">
-          Download CV
-        </a>
-        <a
-          href="https://www.linkedin.com/in/mari-myrmoen-74714b145/"
-          className="hero__link"
-        >
-          LinkedIn
-        </a>
-        <a href="#" className="hero__link">
-          Contact
-        </a>
-      </article>
+      <h3 className="hero__about">Frontend Developer in the making.</h3>
+      <p className="hero__text">Looking for a LIA-pratice week 2-10 & 14-23 2026</p>
     </section>
   );
 }

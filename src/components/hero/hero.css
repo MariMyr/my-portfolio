@@ -4,6 +4,17 @@
   align-items: center;
   margin: .3rem;
 }
+.heroimg__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hero__about {
+  margin: 1rem;
+}
+.hero__text {
+  color: #f5f5f5;
+}
 .hero__links {
     margin-top: 1rem;
 }
