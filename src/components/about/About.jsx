@@ -36,7 +36,7 @@ function About() {
             <h3 className="about__subtitle">Tech Stack</h3>
             <ul className="about__list">
               <li>
-                <FaCss3Alt /> HTML & CSS <FaCss3Alt />
+                <  FaHtml5 /> HTML & CSS <FaCss3Alt />
               </li>
               <li>
                 <FaJs /> JavaScript / React <FaReact />
