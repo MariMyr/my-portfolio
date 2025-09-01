@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./contactSection.css";
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import emailjs from "emailjs-com";
 
 function ContactSection() {
