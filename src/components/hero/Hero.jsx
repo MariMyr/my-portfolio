@@ -7,14 +7,14 @@ function Hero({theme}) {
   return (
     <section className="hero">
       <article className="heroimg__container">
-      <h1>Mari Myrmoen</h1>
-      <img
+              <img
         src={profileImg}
         alt="Profilbild av Mari Myrmoen"
         className="profile__img"
       />
-      </article>
+      <h1 className="hero__heading">Mari Myrmoen</h1>
       <h3 className="hero__about">Frontend Developer in the making.</h3>
+      </article>
       <p className="hero__text">Looking for a LIA-pratice week 2-10 & 14-23 2026</p>
     </section>
   );
