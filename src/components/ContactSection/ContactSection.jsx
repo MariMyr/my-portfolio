@@ -23,7 +23,7 @@ function ContactSection() {
   };
 
   return (
-    <section className="contact__container">
+    <section className="contact__container" id="contact">
     <section className="contact__section">
       <h2 className="contactform__title">Contact me</h2>
         <form className="contact__form" onSubmit={sendEmail}>
