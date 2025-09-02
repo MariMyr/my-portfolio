@@ -37,7 +37,7 @@
 .theme-toggle-wrapper.light {
   background-color: var(--accent);
 }
-/* Responsivitet */
+
 @media (min-width: 768px) {
   .theme-toggle-wrapper {
     width: 6rem;

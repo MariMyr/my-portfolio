@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-/* Light mode (default) */
+
 body.light-theme {
   --primary: #1a1a1a;
   --secondary: #3f3e3e;
@@ -13,7 +13,6 @@ body.light-theme {
   --background: #f5f5f5;
 }
 
-/* Dark mode */
 body.dark-theme {
   --primary: #f5f5f5;
   --secondary: #e4e0e0;

@@ -8,7 +8,7 @@
   background: color-mix(in srgb, var(--background) 60%, transparent);
   border-radius: 1rem;
   padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   min-height: 380px;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
 
 .projectcard:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .projectcard__title {
@@ -44,7 +44,7 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  margin: .5rem;
+  margin: 0.5rem;
   background-color: var(--accent-three);
   color: #f5f5f5;
   font-weight: 500;
@@ -57,7 +57,7 @@
   color: #1a1a1a;
   cursor: pointer;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin: .5rem;
   padding: 0;
 }
 
@@ -68,48 +68,51 @@
 /* Desktop: två i bredd */
 @media (min-width: 1080px) {
   .projectcard__container {
-    grid-template-columns: repeat(2, minmax(500px, 1fr)); 
-    gap: 2.5rem; 
-    max-width: 1200px; 
+    grid-template-columns: repeat(2, minmax(500px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
     margin: 0 auto;
   }
   .projectcard {
-    min-height: 400px;   
-    padding: 2rem;       
+    min-height: 400px;
+    padding: 2rem;
   }
   .projectcard__title {
     font-size: 26px;
   }
+  .projectcard__description {
+    margin-bottom: 1rem;
+  }
   .projectcard__image {
-    height: 300px;      
+    height: 300px;
     margin-bottom: 3.5rem;
   }
   .projectcard__link {
-    padding: .8rem 1.4rem;
+    padding: 0.8rem 1.4rem;
     font-size: 1.2rem;
   }
 }
 /* Desktop: två i bredd */
 @media (min-width: 768px) {
   .projectcard__container {
-    grid-template-columns: repeat(2, minmax(500px, 1fr)); 
-    gap: 2.5rem; 
-    max-width: 1200px; 
+    grid-template-columns: repeat(2, minmax(500px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
     margin: 0 auto;
   }
   .projectcard {
-    min-height: 400px;   
-    padding: 2rem;       
+    min-height: 400px;
+    padding: 2rem;
   }
   .projectcard__title {
     font-size: 26px;
   }
   .projectcard__image {
-    height: 300px;      
+    height: 300px;
     margin-bottom: 3.5rem;
   }
   .projectcard__link {
-    padding: .8rem 1.4rem;
+    padding: 0.8rem 1.4rem;
     font-size: 1.2rem;
   }
 }

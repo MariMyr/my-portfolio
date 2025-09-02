@@ -29,6 +29,17 @@
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+.about__link {
+  color: var(--accent-three);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.about__link:hover {
+  color: var(--accent-two); 
+  transform: scale(1.05);
+}
 
 .about__subtitle {
   font-size: 1.5rem;

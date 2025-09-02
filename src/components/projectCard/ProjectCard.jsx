@@ -33,7 +33,7 @@ function Card({ project }) {
           <>
             {expanded
               ? project.description
-              : project.description.slice(0, 40) + "... "}
+              : project.description.slice(0, 60) + "... "}
             <button
               className="readmore-btn"
               onClick={() => setExpanded(!expanded)}
