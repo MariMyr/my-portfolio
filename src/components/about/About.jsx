@@ -12,7 +12,7 @@ import "./about.css";
 import profileLight from "../../assets/images/profile_light.png";
 import profileDark from "../../assets/images/profile_dark.png";
 
-function About({theme}) {
+function About({ theme }) {
   const [showMore, setShowMore] = useState(false);
   const profileImg = theme === "light" ? profileLight : profileDark;
 
@@ -20,11 +20,11 @@ function About({theme}) {
     <section className="about" id="about">
       <section className="about__content">
         <article className="about__imgcontainer">
-         <img
-           src={profileImg}
-           alt="Profilbild av Mari Myrmoen"
-           className="profile__img"
-         />
+          <img
+            src={profileImg}
+            alt="Profilbild av Mari Myrmoen"
+            className="profile__img"
+          />
         </article>
         <h3 className="about__title">About me</h3>
         <p className="about__text">
@@ -43,10 +43,24 @@ function About({theme}) {
               applications that are not only functional but also accessible and
               visually engaging.
             </p>
+            <p className="about__text">
+              I am looking for a LIA internship during weeks 2-10 and 15-24,
+              2026. If you have an available position or know someone I can get
+              in touch with, I would love to hear from you! Send me an{" "}
+              <a href="#contact" className="about__link">email</a> or a message on{" "}
+              <a
+                href="https://www.linkedin.com/in/yourprofile"
+                className="about__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>.
+            </p>
             <h3 className="about__subtitle">Tech Stack</h3>
             <ul className="about__list">
               <li>
-                <  FaHtml5 /> HTML & CSS <FaCss3Alt />
+                <FaHtml5 /> HTML & CSS <FaCss3Alt />
               </li>
               <li>
                 <FaJs /> JavaScript / React <FaReact />

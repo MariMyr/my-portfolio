@@ -13,7 +13,6 @@ function HomePage() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
   useEffect(() => {
-    // Uppdatera state när theme ändras på body
     const observer = new MutationObserver(() => {
       if (document.body.classList.contains("dark-theme")) {
         setTheme("dark");

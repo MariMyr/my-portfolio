@@ -12,6 +12,8 @@
 }
 .hero__text {
   color: var(--primary);
+  font-size: 18px;
+  text-align: center;
 }
 .hero__links {
   margin-top: 1rem;

@@ -96,7 +96,6 @@
 .contact__button:nth-child(2) { background-color: var(--accent-two) } 
 .contact__button:nth-child(3) { background-color: var(--accent-three) } 
 
-/* Desktop */
 @media (min-width: 768px) {
   .contact__section {
     text-align: center;
@@ -149,7 +148,6 @@
   }
 }
 
-/* Större desktop */
 @media (min-width: 1024px) {
   .contact__section {
     min-width: 1000px;
