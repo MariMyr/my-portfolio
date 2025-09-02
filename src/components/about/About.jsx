@@ -9,13 +9,23 @@ import {
 } from "react-icons/fa";
 import { useState } from "react";
 import "./about.css";
+import profileLight from "../../assets/images/profile_light.png";
+import profileDark from "../../assets/images/profile_dark.png";
 
-function About() {
+function About({theme}) {
   const [showMore, setShowMore] = useState(false);
+  const profileImg = theme === "light" ? profileLight : profileDark;
 
   return (
-    <section className="about">
+    <section className="about" id="about">
       <section className="about__content">
+        <article className="about__imgcontainer">
+         <img
+           src={profileImg}
+           alt="Profilbild av Mari Myrmoen"
+           className="profile__img"
+         />
+        </article>
         <h3 className="about__title">About me</h3>
         <p className="about__text">
           Hi! I'm Mari, a Frontend Developer in the making, currently studying

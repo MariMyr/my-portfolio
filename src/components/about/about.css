@@ -9,10 +9,21 @@
   padding: 2rem;
   border-radius: 12px;
   max-width: 800px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.about__imgcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.profile__img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
 }
 .about__title {
-    color: #1a1a1a;
+  color: #1a1a1a;
 }
 .about__text {
   font-size: 1rem;
@@ -26,15 +37,14 @@
   font-weight: 600;
   text-align: center;
   color: #1a1a1a;
-
 }
 .about__button {
   margin-top: 1.3rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: .5rem .5rem;
-  font-size: .9rem;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.9rem;
   background-color: var(--accent-three);
   color: #f5f5f5;
   border: none;
@@ -43,7 +53,7 @@
   transition: background 0.2s ease;
 }
 
- .about__list {
+.about__list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -56,23 +66,21 @@
   background: var(--accent-one);
   color: white;
   padding: 0.6rem 1.2rem;
-  border-radius: 999px; /* gör chip-style */
-  font-size: .85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
   font-weight: 500;
   transition: transform 0.2s ease, background 0.2s ease;
   cursor: default;
 }
 
-.about__list li:hover {
-  transform: scale(1.05);
-  background: var(--accent-three);
-}
-
-
-/* 🔹 Responsivitet */
 @media (min-width: 768px) {
   .about {
     padding: 3rem 2rem;
+  }
+  .profile__img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
   }
   .about__content {
     padding: 3rem;
@@ -89,7 +97,7 @@
 
   .about__button {
     font-size: 1.2rem;
-    padding: .8rem .8rem;
+    padding: 0.8rem 0.8rem;
   }
 
   .about__subtitle {
@@ -106,6 +114,11 @@
     margin: 2rem auto;
     max-width: 1200px;
   }
+  .profile__img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
   .about__content {
     max-width: 1000px;
     padding: 4rem;
@@ -116,7 +129,7 @@
   }
   .about__button {
     font-size: 1.2rem;
-    padding: .8rem .8rem;
+    padding: 0.8rem 0.8rem;
     margin-top: 3rem;
   }
 }

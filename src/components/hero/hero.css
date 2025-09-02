@@ -4,11 +4,6 @@
   align-items: center;
   margin: 0.3rem;
 }
-.heroimg__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .hero__heading {
   font-size: 26px;
 }
@@ -26,16 +21,7 @@
   color: var(--primary);
   font-weight: bold;
 }
-.heroimg__container {
-  display: flex;
-  gap: 1rem;
-}
-.profile__img {
-  width: 4.3rem;
-  height: 4rem;
-}
 
-/* Responsivitet */
 @media (min-width: 768px) {
   .hero__heading {
     font-size: 36px;
@@ -49,29 +35,16 @@
     font-weight: bold;
     font-size: 18px;
   }
-  .profile__img {
-    width: 8rem;
-    height: 7rem;
-  }
   .hamburger {
     display: none;
   }
 }
 
 @media (min-width: 1080px) {
-  .heroimg__container {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-  }
   .hero__heading {
     font-size: 3.5rem;
   }
   .hero__text {
-    font-size: 22px;
-  }
-  .profile__img {
-    width: 11rem;
-    height: 10rem;
+    font-size: 26px;
   }
 }
