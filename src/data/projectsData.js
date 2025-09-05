@@ -1,7 +1,7 @@
-import whereItsAt from "../assets/images/where-its-at.jpg";
-import movieDatabase from "../assets/images/my-movie-database.jpg";
-import bonzaiHotel from "../assets/images/bonzai.jpg";
-import nodeExam from "../assets/images/node-exam.jpg";
+import whereItsAt from "../assets/images/where_its_at.webp";
+import movieDatabase from "../assets/images/my_movie_database.webp";
+import bonzaiHotel from "../assets/images/bonzai.webp";
+import nodeExam from "../assets/images/node_exam.webp";
 
 export const projectsMeta = [
   {

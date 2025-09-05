@@ -10,8 +10,8 @@ import {
 import { SiAwslambda } from "react-icons/si";
 import { useState } from "react";
 import "./about.css";
-import profileLight from "../../assets/images/profile_light.png";
-import profileDark from "../../assets/images/profile_dark.png";
+import profileLight from "../../assets/images/profile_light.webp";
+import profileDark from "../../assets/images/profile_dark.webp";
 import { useTranslation, Trans } from "react-i18next";
 
 function About({ theme }) {
@@ -27,6 +27,7 @@ function About({ theme }) {
             src={profileImg}
             alt="Profilbild av Mari Myrmoen"
             className="profile__img"
+            loading="lazy"
           />
         </article>
 

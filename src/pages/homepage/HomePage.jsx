@@ -3,8 +3,8 @@ import Header from "../../components/header/Header";
 import About from "../../components/about/About";
 import Projects from "../../components/projects/Projects";
 import Footer from "../../components/footer/Footer";
-import backgroundLight from "../../assets/images/background_light.png"
-import backgroundDark from "../../assets/images/background_dark.png"
+import backgroundLight from "../../assets/images/background_light.webp"
+import backgroundDark from "../../assets/images/background_dark.webp"
 import { useEffect, useState } from "react";
 import Hero from "../../components/hero/Hero";
 import ContactSection from "../../components/ContactSection/ContactSection";

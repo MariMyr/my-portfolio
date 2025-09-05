@@ -43,12 +43,13 @@ function HamburgerComponent() {
           size={size}
           toggled={open}
           toggle={setOpen}
+          label="Toggle menu"
           color={isDark ? "#f5f5f5" : "#1a1a1a"}  
         />
       </div>
 
       {open && (
-        <div className="hamburger__menu">
+        <div className="hamburger__menu" role="menu">
           <a href="#about" onClick={() => setOpen(false)}>About</a>
           <a href="#projects" onClick={() => setOpen(false)}>Projects</a>
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>

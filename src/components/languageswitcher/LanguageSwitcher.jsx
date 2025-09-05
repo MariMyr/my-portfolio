@@ -11,8 +11,8 @@ function LanguageSwitcher() {
 
   return (
     <section className="language__switcher">
-      <button onClick={() => switchLanguage("en")}>EN</button>
-      <button onClick={() => switchLanguage("sv")}>SV</button>
+      <button aria-label="Switch language" onClick={() => switchLanguage("en")}>EN</button>
+      <button aria-label="Switch language" onClick={() => switchLanguage("sv")}>SV</button>
     </section>
   );
 }
