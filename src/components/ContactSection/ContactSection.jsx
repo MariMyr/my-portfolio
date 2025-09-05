@@ -30,11 +30,11 @@ function ContactSection() {
       <section className="contact__section">
         <h2 className="contactform__title">{t("title")}</h2>
         <form className="contact__form" onSubmit={sendEmail}>
-          <label htmlFor="name">{t("nameLabel")}</label>
+          <label htmlFor="name" className="visually-hidden">{t("nameLabel")}</label>
           <input type="text" id="name" name="from_name" placeholder={t("namePlaceholder")} required />
-          <label htmlFor="email">{t("emailLabel")}</label>
+          <label htmlFor="email" className="visually-hidden">{t("emailLabel")}</label>
           <input type="email" id="email" name="from_email" placeholder={t("emailPlaceholder")} required />
-          <label htmlFor="message">{t("messageLabel")}</label>
+          <label htmlFor="message" className="visually-hidden">{t("messageLabel")}</label>
           <textarea name="message" id="message" placeholder={t("messagePlaceholder")} required />
           <button type="submit" aria-label={t("sendButton")}>{t("sendButton")}</button>
           {status && <p className="status">{status}</p>}
