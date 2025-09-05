@@ -1,0 +1,11 @@
+{
+  "title": "Kontakta mig",
+  "namePlaceholder": "Ditt namn",
+  "emailPlaceholder": "Din e-post",
+  "messagePlaceholder": "Ditt meddelande",
+  "sendButton": "Skicka",
+  "statusSuccess": "✅ Meddelandet skickades!",
+  "statusError": "❌ Något gick fel, försök igen.",
+  "linkedin": "LinkedIn",
+  "github": "GitHub"
+}

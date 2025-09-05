@@ -36,6 +36,9 @@
 html {
   scroll-behavior: smooth;
 }
+.navbar__language {
+  display: none; /* döljs på mobil */
+}
 
 @media (min-width: 768px) {
   .navbar {
@@ -60,6 +63,11 @@ html {
   .navbar__links {
     display: flex;
     font-size: 2rem;
+  }
+    .navbar__language {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 }
 

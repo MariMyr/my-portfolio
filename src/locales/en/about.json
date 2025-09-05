@@ -1,0 +1,11 @@
+{
+  "title": "About me",
+  "intro": "Hi! I'm Mari, a Frontend Developer in the making, currently studying at Folkuniversitetet in Gothenburg. During my first year, I gained experience across a wide range of topics and technologies.",
+  "more1": "This year, I am continuing to build on that foundation by exploring cloud deployment with AWS, development of AI-powered web applications, and fullstack development with TypeScript. My skill set covers both frontend and backend, with a strong focus on clean code, user-friendly design, and agile collaboration. I enjoy creating applications that are not only functional but also accessible and visually engaging.",
+  "more2": "I am looking for a LIA internship during weeks 2-10 and 15-24, 2026. If you have an available position or know someone I can get in touch with, I would love to hear from you! Send me an <0>email</0> or a message on <1>LinkedIn</1>.",
+  "email": "email",
+  "linkedin": "LinkedIn",
+  "stack": "Tech Stack",
+  "showMore": "Show more",
+  "showLess": "Show less"
+}

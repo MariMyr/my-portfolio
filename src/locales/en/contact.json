@@ -1,0 +1,11 @@
+{
+  "title": "Contact me",
+  "namePlaceholder": "Your name",
+  "emailPlaceholder": "Your email",
+  "messagePlaceholder": "Your message",
+  "sendButton": "Send",
+  "statusSuccess": "✅ Message sent!",
+  "statusError": "❌ Something went wrong, try again.",
+  "linkedin": "LinkedIn",
+  "github": "GitHub"
+}

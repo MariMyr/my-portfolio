@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./hamburger.css";
 import Hamburger from "hamburger-react";
+import LanguageSwitcher from "../languageswitcher/LanguageSwitcher";
 
 function HamburgerComponent() {
   const [open, setOpen] = useState(false);
@@ -51,6 +52,7 @@ function HamburgerComponent() {
           <a href="#about" onClick={() => setOpen(false)}>About</a>
           <a href="#projects" onClick={() => setOpen(false)}>Projects</a>
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+          <LanguageSwitcher onClick={() => setOpen(false)} />
         </div>
       )}
     </div>

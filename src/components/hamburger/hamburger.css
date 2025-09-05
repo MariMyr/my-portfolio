@@ -29,6 +29,9 @@
   font-weight: bold;
   color: var(--primary);
 }
+.hamburger__menu .language-switcher {
+  margin-top: 2rem;
+}
 
 .dark-theme .hamburger__menu {
   background-color: var(--accent-one); 

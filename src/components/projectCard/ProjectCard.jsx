@@ -1,19 +1,23 @@
 import "./projectCard.css";
-import { projects } from "../../data/projectsData";
+import { projectsMeta } from "../../data/projectsData";
 import { useEffect, useState } from "react";
-
+import { useTranslation } from "react-i18next";
 
 function ProjectCard() {
+  const { t } = useTranslation("projects");
+  const texts = t("projects", { returnObjects: true });
+
   return (
     <section className="projectcard__container">
-      {projects.map((project, index) => (
-        <Card key={index} project={project} index={index} />
-      ))}
+      {projectsMeta.map((project, index) => {
+        const text = texts[index];
+        return <Card key={index} project={project} text={text} t={t} />;
+      })}
     </section>
   );
 }
 
-function Card({ project }) {
+function Card({ project, text, t }) {
   const [expanded, setExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -27,34 +31,36 @@ function Card({ project }) {
 
   return (
     <section className="projectcard">
-      <h3 className="projectcard__title">{project.title}</h3>
+      <h3 className="projectcard__title">{text.title}</h3>
       <p className="projectcard__description">
         {isMobile ? (
           <>
-            {expanded
-              ? project.description
-              : project.description.slice(0, 60) + "... "}
+            {expanded ? text.description : text.description.slice(0, 60) + "... "}
             <button
               className="readmore-btn"
               onClick={() => setExpanded(!expanded)}
             >
-              {expanded ? "Read less" : "read more"}
+              {expanded ? t("readLess") : t("readMore")}
             </button>
           </>
         ) : (
-          project.description
+          text.description
         )}
       </p>
       <img
         src={project.image}
-        alt={`Image of ${project.title}`}
+        alt={`Image of ${text.title}`}
         className="projectcard__image"
       />
       <div>
         {project.netlify && (
-          <a href={project.netlify} className="projectcard__link">Netlify</a>
+          <a href={project.netlify} className="projectcard__link">
+            {t("netlify")}
+          </a>
         )}
-        <a href={project.github} className="projectcard__link">GitHub</a>
+        <a href={project.github} className="projectcard__link">
+          {t("github")}
+        </a>
       </div>
     </section>
   );
