@@ -87,14 +87,15 @@
   transition: transform 0.2s, background-color 0.2s;
   width: 8rem;
   text-align: center;
+  background-color: var(--accent-three);
 }
 
 .contact__button:hover {
   transform: translateY(-3px);}
-
+/* 
 .contact__button:nth-child(1) { background-color: var(--accent-one); } 
 .contact__button:nth-child(2) { background-color: var(--accent-two) } 
-.contact__button:nth-child(3) { background-color: var(--accent-three) } 
+.contact__button:nth-child(3) { background-color: var(--accent-three) }  */
 
 @media (min-width: 768px) {
   .contact__section {

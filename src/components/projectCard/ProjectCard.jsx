@@ -49,8 +49,9 @@ function Card({ project, text, t }) {
       </p>
       <img
         src={project.image}
-        alt={`Image of ${text.title}`}
+        alt={`Image of my project ${text.title}`}
         className="projectcard__image"
+        loading="lazy"
       />
       <div>
         {project.netlify && (
