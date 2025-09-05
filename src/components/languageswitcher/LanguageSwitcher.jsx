@@ -1,0 +1,20 @@
+import { useTranslation } from "react-i18next";
+import "./languageSwitcher.css";
+
+function LanguageSwitcher() {
+  const { i18n } = useTranslation();
+
+  const switchLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    if (onclick) onclick();
+  };
+
+  return (
+    <section className="language__switcher">
+      <button onClick={() => switchLanguage("en")}>EN</button>
+      <button onClick={() => switchLanguage("sv")}>SV</button>
+    </section>
+  );
+}
+
+export default LanguageSwitcher;

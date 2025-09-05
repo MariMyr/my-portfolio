@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "title": "Where It's @",
+      "description": "En React-baserad biljettapp för lokala musikevenemang. Innehåller routing, state management med Zustand och API-hantering. Byggd modulärt med fokus på responsivitet och tillgänglighet."
+    },
+    {
+      "title": "My Movie Database",
+      "description": "En filmdatabas-app där användare kan söka efter filmer via OMDB API, visa detaljerad information och spara favoriter. Byggd med HTML, CSS och JavaScript med fokus på moduler, API-hantering, events och responsiv design."
+    },
+    {
+      "title": "Bonz.ai",
+      "description": "En responsiv webbplats för ett futuristiskt hotellkoncept. Byggd helt i HTML och CSS (grid + flexbox) med fokus på semantisk kod, tillgänglighet och modern design."
+    },
+    {
+      "title": "Airbean Admin API",
+      "description": "Ett backend-projekt för att hantera en kaffemeny. Byggt med Node.js, Express.js & MongoDB. Inkluderar skyddade admin-endpoints (CRUD) med JWT-autentisering, bcrypt-lösenordskryptering, felhantering och Swagger-dokumentation."
+    }
+  ],
+  "readMore": "Läs mer",
+  "readLess": "Visa mindre",
+  "netlify": "Netlify",
+  "github": "GitHub"
+}

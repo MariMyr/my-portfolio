@@ -7,13 +7,16 @@ import {
   FaFigma,
   FaGitAlt,
 } from "react-icons/fa";
+import { SiAwslambda } from "react-icons/si";
 import { useState } from "react";
 import "./about.css";
 import profileLight from "../../assets/images/profile_light.png";
 import profileDark from "../../assets/images/profile_dark.png";
+import { useTranslation, Trans } from "react-i18next";
 
 function About({ theme }) {
   const [showMore, setShowMore] = useState(false);
+  const { t } = useTranslation("about");
   const profileImg = theme === "light" ? profileLight : profileDark;
 
   return (
@@ -26,38 +29,35 @@ function About({ theme }) {
             className="profile__img"
           />
         </article>
-        <h3 className="about__title">About me</h3>
-        <p className="about__text">
-          Hi! I'm Mari, a Frontend Developer in the making, currently studying
-          at Folkuniversitetet in Gothenburg. During my first year, I gained
-          experience across a wide range of topics and technologies.
-        </p>
+
+        <h3 className="about__title">{t("title")}</h3>
+        <p className="about__text">{t("intro")}</p>
+
         {showMore && (
           <>
+            <p className="about__text">{t("more1")}</p>
             <p className="about__text">
-              This year, I am continuing to build on that foundation by
-              exploring cloud deployment, AI integration in modern applications,
-              and fullstack development with TypeScript. My skill set covers
-              both frontend and backend, with a strong focus on clean code,
-              user-friendly design, and agile collaboration. I enjoy creating
-              applications that are not only functional but also accessible and
-              visually engaging.
+              <Trans
+                i18nKey="more2"
+                ns="about"
+                components={[
+                  <a
+                    href="#contact"
+                    className="about__link"
+                    aria-label="contact link"
+                  />,
+                  <a
+                    href="https://www.linkedin.com/in/yourprofile"
+                    className="about__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  />,
+                ]}
+              />
             </p>
-            <p className="about__text">
-              I am looking for a LIA internship during weeks 2-10 and 15-24,
-              2026. If you have an available position or know someone I can get
-              in touch with, I would love to hear from you! Send me an{" "}
-              <a href="#contact" className="about__link">email</a> or a message on{" "}
-              <a
-                href="https://www.linkedin.com/in/yourprofile"
-                className="about__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>.
-            </p>
-            <h3 className="about__subtitle">Tech Stack</h3>
+
+            <h3 className="about__subtitle">{t("stack")}</h3>
             <ul className="about__list">
               <li>
                 <FaHtml5 /> HTML & CSS <FaCss3Alt />
@@ -74,14 +74,18 @@ function About({ theme }) {
               <li>
                 <FaGitAlt /> Git, GitHub & Agile methods
               </li>
+              <li>
+                <SiAwslambda /> Cloud & AWS
+              </li>
             </ul>
           </>
         )}
+
         <button
           className="about__button"
           onClick={() => setShowMore(!showMore)}
         >
-          {showMore ? "Show less" : "Show more"}
+          {showMore ? t("showLess") : t("showMore")}
         </button>
       </section>
     </section>
