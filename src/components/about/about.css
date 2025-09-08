@@ -29,6 +29,10 @@
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+.highlight {
+  font-weight: bold;
+}
+
 .about__link {
   color: var(--accent-three);
   font-weight: 600;
@@ -37,11 +41,11 @@
 }
 
 .about__link:hover {
-  color: var(--accent-two); 
+  color: var(--accent-two);
   transform: scale(1.05);
 }
 
-.about__subtitle {
+.about__stack {
   font-size: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -70,11 +74,11 @@
   flex-wrap: wrap;
   gap: 0.8rem;
   justify-content: center;
-  margin-top: 1rem;
+  margin: 2rem;
 }
 
 .about__list li {
-  background: var(--accent-one);
+  background: var(--accent-three);
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
@@ -111,8 +115,11 @@
     padding: 0.8rem 0.8rem;
   }
 
-  .about__subtitle {
+  .about__stack {
     font-size: 2rem;
+  }
+  .about__list {
+    margin-bottom: 3rem;
   }
   .about__list li {
     font-size: 1.1rem;
@@ -135,12 +142,15 @@
     padding: 4rem;
     margin: 0 auto;
   }
-  .about__subtitle {
+  .about__stack {
     margin-top: 3rem;
   }
   .about__button {
     font-size: 1.2rem;
     padding: 0.8rem 0.8rem;
     margin-top: 3rem;
+  }
+  .about__list {
+    margin-bottom: 5rem;
   }
 }
