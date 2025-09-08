@@ -37,7 +37,7 @@ html {
   scroll-behavior: smooth;
 }
 .navbar__language {
-  display: none; /* döljs på mobil */
+  display: none; 
 }
 
 @media (min-width: 768px) {
@@ -64,10 +64,12 @@ html {
     display: flex;
     font-size: 2rem;
   }
-    .navbar__language {
+  .navbar__links a:hover {
+    transform: translateY(-3px);
+  }
+  .navbar__language {
     display: flex;
     align-items: center;
     gap: 0.5rem;
   }
 }
-

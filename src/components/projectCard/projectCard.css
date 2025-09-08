@@ -14,12 +14,6 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.projectcard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .projectcard__title {
@@ -41,6 +35,7 @@
 }
 
 .projectcard__link {
+  display: inline-block;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -48,7 +43,11 @@
   background-color: var(--accent-three);
   color: #f5f5f5;
   font-weight: 500;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.projectcard__link:hover {
+  background-color: var(--accent-two);
+  transform: translateY(-3px) scale(1.05);
 }
 
 .readmore-btn {
@@ -57,7 +56,7 @@
   color: #1a1a1a;
   cursor: pointer;
   font-weight: 500;
-  margin: .5rem;
+  margin: 0.5rem;
   padding: 0;
 }
 
