@@ -74,7 +74,7 @@
   flex-wrap: wrap;
   gap: 0.8rem;
   justify-content: center;
-  margin: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .about__list li {
@@ -86,6 +86,28 @@
   font-weight: 500;
   transition: transform 0.2s ease, background 0.2s ease;
   cursor: default;
+}
+.about__list li svg {
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+@media (max-width: 500px) {
+  .about__list {
+    display: block;
+    text-align: center;
+  }
+
+  .about__list li {
+    background: none;
+    color: #1a1a1a;
+    padding: 0.2rem 0;
+    font-size: 1rem;
+    font-weight: 1000;
+    border-radius: 0;
+  }
+  .about__list li svg {
+    color: var(--accent-two);
+  }
 }
 
 @media (min-width: 768px) {
