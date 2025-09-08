@@ -2,11 +2,14 @@ import { useEffect, useState } from "react";
 import "./hamburger.css";
 import Hamburger from "hamburger-react";
 import LanguageSwitcher from "../languageswitcher/LanguageSwitcher";
+import { useTranslation } from "react-i18next";
+
 
 function HamburgerComponent() {
   const [open, setOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
   const [size, setSize] = useState(30);
+  const { t, i18n } = useTranslation("navbar");
 
   useEffect(() => {
     const theme = document.body.classList.contains("dark-theme");
@@ -50,9 +53,9 @@ function HamburgerComponent() {
 
       {open && (
         <div className="hamburger__menu" role="menu">
-          <a href="#about" onClick={() => setOpen(false)}>About</a>
-          <a href="#projects" onClick={() => setOpen(false)}>Projects</a>
-          <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+          <a href="#about" onClick={() => setOpen(false)}>{t("about")}</a>
+          <a href="#projects" onClick={() => setOpen(false)}>{t("projects")}</a>
+          <a href="#contact" onClick={() => setOpen(false)}>{t("contact")}</a>
           <LanguageSwitcher onClick={() => setOpen(false)} />
         </div>
       )}
