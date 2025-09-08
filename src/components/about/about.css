@@ -65,7 +65,12 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.about__button:hover {
+  background-color: var(--accent-two);
+  transform: translateY(-3px) scale(1.05);
 }
 
 .about__list {
@@ -136,7 +141,6 @@
     font-size: 1.2rem;
     padding: 0.8rem 0.8rem;
   }
-
   .about__stack {
     font-size: 2rem;
   }
