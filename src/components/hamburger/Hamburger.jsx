@@ -9,7 +9,7 @@ function HamburgerComponent() {
   const [open, setOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
   const [size, setSize] = useState(30);
-  const { t, i18n } = useTranslation("navbar");
+  const { t } = useTranslation("navbar");
 
   useEffect(() => {
     const theme = document.body.classList.contains("dark-theme");
