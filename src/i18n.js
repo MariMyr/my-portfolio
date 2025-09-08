@@ -10,6 +10,8 @@ import enNavbar from "./locales/en/navbar.json";
 import svNavbar from "./locales/sv/navbar.json";
 import enHero from "./locales/en/hero.json";
 import svHero from "./locales/sv/hero.json";
+import enHamburger from "./locales/en/hamburger.json";
+import svHamburger from "./locales/sv/hamburger.json";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -19,6 +21,7 @@ i18n.use(initReactI18next).init({
       contact: enContact,
       navbar: enNavbar,
       hero: enHero,
+      hamburger: enHamburger,
     },
     sv: { 
       about: svAbout,
@@ -26,12 +29,13 @@ i18n.use(initReactI18next).init({
       contact: svContact,
       navbar: svNavbar,
       hero: svHero,
+      hamburger: svHamburger,
     }
   },
   lng: "en",
   fallbackLng: "en",
   interpolation: { escapeValue: false },
-  ns: ["about", "projects", "contact", "navbar", "hero"],
+  ns: ["about", "projects", "contact", "navbar", "hero", "hamburger"],
   defaultNS: "about"
 });
 
