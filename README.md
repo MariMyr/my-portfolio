@@ -13,13 +13,12 @@ Detta är min personliga frontend-portfoliowebbplats byggd med **React**, **i18n
 ## Teknologier
 - React
 - CSS / Flexbox / Grid
-- Zustand (för state management, t.ex. i projekt)
 - React-icons
 - EmailJS
-- i18next (internationellt stöd)
+- i18next
 
 ## Struktur
 - `src/components` – React-komponenter som Hero, About, Projects, Contact, Navbar m.fl.
-- `src/assets` – bilder och illustrationer.
+- `src/assets` – bilder och fonts.
 - `src/locales` – språkfiler (en/sv) för flerspråkig text.
 - `src/data` – projektdata.
