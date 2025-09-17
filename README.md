@@ -1,8 +1,9 @@
 # Mari Myrmoen Portfolio
 
-Detta är min personliga frontend-portfoliowebbplats byggd med **React**, **i18next** för flerspråkighet, och **EmailJS** för kontaktformulär.  
+Detta är min personliga frontend-portfoliowebbplats byggd med **React**, **i18next** för flerspråkighet, och **EmailJS** för kontaktformulär.
 
 ## Funktioner
+
 - Flerspråkig: Engelska och Svenska.
 - Responsiv design med hamburger-meny för mobil.
 - Tema-switcher (ljus/mörk) med sparat val.
@@ -11,6 +12,7 @@ Detta är min personliga frontend-portfoliowebbplats byggd med **React**, **i18n
 - Användarvänlig och tillgänglig design.
 
 ## Teknologier
+
 - React
 - CSS / Flexbox / Grid
 - React-icons
@@ -18,7 +20,8 @@ Detta är min personliga frontend-portfoliowebbplats byggd med **React**, **i18n
 - i18next
 
 ## Struktur
+
 - `src/components` – React-komponenter som Hero, About, Projects, Contact, Navbar m.fl.
 - `src/assets` – bilder och fonts.
-- `src/locales` – språkfiler (en/sv) för flerspråkig text.
+- `src/languages` – språkfiler (en/sv) för flerspråkig text.
 - `src/data` – projektdata.
