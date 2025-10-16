@@ -7,7 +7,7 @@ import {
   FaFigma,
   FaGitAlt,
 } from "react-icons/fa";
-import { SiAwslambda } from "react-icons/si";
+import { SiAwslambda, SiTailwindcss } from "react-icons/si";
 import { useState } from "react";
 import "./about.css";
 import profileLight from "../../assets/images/profile_light.webp";
@@ -51,9 +51,11 @@ function About({ theme }) {
           <li>
             <SiAwslambda /> Cloud & AWS
           </li>
+          <li>
+            <SiTailwindcss /> Tailwind
+          </li>
         </ul>
-
-        {/* <h3 className="about__title">{t("title")}</h3> */}
+        
         <p className="about__text">
           <Trans
             i18nKey="intro"
