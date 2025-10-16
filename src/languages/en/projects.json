@@ -1,6 +1,10 @@
 {
   "projects": [
     {
+      "title": "Shui Message Board",
+      "description": "A fullstack application built with React and Tailwind for the frontend, hosted on a S3-bucket. The backend is serverless using AWS Lambda, API Gateway, and DynamoDB. Users can post, edit, and view messages, with filtering by user and sorting by date."
+    },
+    {
       "title": "Where It's @",
       "description": "A React-based ticket app for local music events. Features routing, state management with Zustand, and API handling. Designed modularly with a focus on responsiveness and accessibility."
     },

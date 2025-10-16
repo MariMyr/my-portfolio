@@ -47,12 +47,14 @@ function Card({ project, text, t }) {
           text.description
         )}
       </p>
+      <div className="projectcard__image-wrapper">
       <img
         src={project.image}
         alt={`Image of my project ${text.title}`}
         className="projectcard__image"
         loading="lazy"
       />
+      </div>
       <div>
         {project.netlify && (
           <a href={project.netlify} className="projectcard__link">

@@ -2,8 +2,13 @@ import whereItsAt from "../assets/images/where_its_at.webp";
 import movieDatabase from "../assets/images/my_movie_database.webp";
 import bonzaiHotel from "../assets/images/bonzai.webp";
 import nodeExam from "../assets/images/node_exam.webp";
+import shuiBoard from "../assets/images/shui_board.webp";
 
 export const projectsMeta = [
+  {
+    image: shuiBoard,
+    github: "https://github.com/MariMyr/shui-message-board.git",
+  },
   {
     image: whereItsAt,
     netlify: "https://mmyrmoen-whereitsat.netlify.app/",
