@@ -3,8 +3,18 @@ import movieDatabase from "../assets/images/my_movie_database.webp";
 import bonzaiHotel from "../assets/images/bonzai.webp";
 import nodeExam from "../assets/images/node_exam.webp";
 import shuiBoard from "../assets/images/shui_board.webp";
+import techNova from "../assets/images/techNova.webp";
+import strajkBowling from "../assets/images/strajk_bowling.webp";
 
 export const projectsMeta = [
+  {
+    image: strajkBowling,
+    github: "https://github.com/MariMyr/strajk-bowling.git"
+  },
+  {
+    image: techNova,
+    github: "https://github.com/MariMyr/technova-support-assistant.git",
+  }, 
   {
     image: shuiBoard,
     github: "https://github.com/MariMyr/shui-message-board.git",

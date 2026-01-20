@@ -6,8 +6,8 @@ import {
   FaNodeJs,
   FaFigma,
   FaGitAlt,
-} from "react-icons/fa";
-import { SiAwslambda, SiTailwindcss } from "react-icons/si";
+  } from "react-icons/fa";
+import { SiAwslambda, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { useState } from "react";
 import "./about.css";
 import profileLight from "../../assets/images/profile_light.webp";
@@ -53,6 +53,9 @@ function About({ theme }) {
           </li>
           <li>
             <SiTailwindcss /> Tailwind
+          </li>
+          <li>
+            <SiTypescript /> TypeScript
           </li>
         </ul>
         
