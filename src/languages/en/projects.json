@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "title": "Strajk Bowling",
+      "description": "A mobile-friendly booking app built with React and TypeScript. Users can book lanes, players, and shoes, receive a confirmation with price and booking ID, and see clear error messages if the booking fails."
+    },
+    {
+      "title": "TechNova Support Assistant",
+      "description": "An AI-powered support chat built with Node.js, Express, Supabase, and Ollama. Implements RAG retrieval, embeddings, memory handling, and dynamic answers based on company documentation."
+    },
+    {
       "title": "Shui Message Board",
       "description": "A fullstack application built with React and Tailwind for the frontend, hosted on a S3-bucket. The backend is serverless using AWS Lambda, API Gateway, and DynamoDB. Users can post, edit, and view messages, with filtering by user and sorting by date."
     },
