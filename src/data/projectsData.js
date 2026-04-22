@@ -1,12 +1,17 @@
-import whereItsAt from "../assets/images/where_its_at.webp";
+import whereItsAt from "../assets/images/where_app.jpg";
 import movieDatabase from "../assets/images/my_movie_database.webp";
 import bonzaiHotel from "../assets/images/bonzai.webp";
 import nodeExam from "../assets/images/node_exam.webp";
 import shuiBoard from "../assets/images/shui_board.webp";
 import techNova from "../assets/images/technova.webp";
 import strajkBowling from "../assets/images/strajk_bowling.webp";
+import ito from "../assets/images/ito_app.jpg";
 
 export const projectsMeta = [
+  {
+    image: ito,
+    github: "https://github.com/MariMyr/ito.git"
+  },
   {
     image: strajkBowling,
     github: "https://github.com/MariMyr/strajk-bowling.git"
