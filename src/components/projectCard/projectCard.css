@@ -98,6 +98,8 @@
   .projectcard__image {
     height: 300px;
     margin-bottom: 3.5rem;
+    object-fit: cover;
+
   }
   .projectcard__link {
     padding: 0.8rem 1.4rem;
@@ -142,5 +144,9 @@
     flex: 0 0 80%;
     scroll-snap-align: start;
     margin-right: 1rem;
+  }
+
+   .projectcard__image {
+    height: 150px;
   }
 }

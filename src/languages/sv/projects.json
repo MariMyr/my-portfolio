@@ -1,6 +1,10 @@
 {
   "projects": [
     {
+      "title": "Ito",
+      "description": "En mobile-first applikation byggd med React Native, TypeScript och Supabase. Appen hjälper hobbystickare att organisera sina projekt och mönster genom att samla PDF-filer, anteckningar och framstegsbilder på ett säkert ställe med privat molnlagring."
+    },
+    {
       "title": "Strajk Bowling",
       "description": "En mobilanpassad bokningsapp byggd med React och TypeScript. Användare kan boka bana, spelare och skor, få en bekräftelse med pris och bokningsnummer samt se felmeddelanden vid misslyckad bokning."
     },

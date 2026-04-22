@@ -1,6 +1,10 @@
 {
   "projects": [
     {
+      "title": "Ito",
+      "description": "A mobile-first application built with React Native, TypeScript, and Supabase. The app helps knitters organize their projects and patterns by centralizing PDF files, notes, and progress photos in a secure cloud-based environment."
+    },
+    {
       "title": "Strajk Bowling",
       "description": "A mobile-friendly booking app built with React and TypeScript. Users can book lanes, players, and shoes, receive a confirmation with price and booking ID, and see clear error messages if the booking fails."
     },
