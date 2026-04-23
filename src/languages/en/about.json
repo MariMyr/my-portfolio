@@ -1,8 +1,8 @@
 {
   "title": "About me",
-  "intro": "<0>Hi! I'm Mari, a Frontend Developer in the making,</0> currently studying at Folkuniversitetet in Gothenburg. During my first year, I gained experience across a wide range of topics and technologies.",
-  "more1": "This year, I am continuing to build on that foundation by exploring cloud deployment with AWS, development of AI-powered web applications, and fullstack development with TypeScript. My skill set covers both frontend and backend, with a strong focus on clean code, user-friendly design, and agile collaboration. I enjoy creating applications that are not only functional but also accessible and visually engaging.",
-  "more2": "I am looking for a LIA internship during weeks 2-10 and 15-24, 2026. If you have an available position or know someone I can get in touch with, I would love to hear from you! Send me an <0>email</0> or a message on <1>LinkedIn</1>.",
+  "intro": "<0>Hi! I'm Mari, a Web Developer,</0> with a strong focus on creating scalable, user-centric applications. I am currently completing my final year at Folkuniversitetet in Gothenburg and will be graduating in June 2026. My journey into tech is driven by a passion for bridging the gap between complex user needs and elegant technical solutions.",
+  "more1": "My technical journey has led me to become a versatile developer with expertise in TypeScript, React, and Next.js, complemented by a solid understanding of backend systems like Node.js and Supabase. Most recently, I’ve been honing my skills as an intern at Nexer Group, where I worked on a collaborative team building an email builder using WebSockets.",
+  "more2": "With a Bachelor’s degree in Social Work, I bring a unique human perspective to development, prioritizing accessibility, clean architecture, and empathy for the end-user. I am now looking for my next challenge where I can contribute my skills in fullstack development and agile collaboration. If you have an available position or know someone I can get in touch with, I would love to hear from you! Send me an <0>email</0> or a message on <1>LinkedIn</1>.",
   "email": "email",
   "linkedin": "LinkedIn",
   "stack": "Tech Stack",
