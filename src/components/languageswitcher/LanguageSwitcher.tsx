@@ -1,12 +1,16 @@
 import { useTranslation } from "react-i18next";
 import "./languageSwitcher.css";
 
-function LanguageSwitcher() {
+type LanguageSwitcherProps = {
+  onClick?: () => void;
+};
+
+function LanguageSwitcher({ onClick }: LanguageSwitcherProps) {
   const { i18n } = useTranslation();
 
-  const switchLanguage = (lang) => {
+  const switchLanguage = (lang: "en" | "sv") => {
     i18n.changeLanguage(lang);
-    if (onclick) onclick();
+    onClick?.();
   };
 
   return (

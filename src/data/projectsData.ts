@@ -7,7 +7,13 @@ import techNova from "../assets/images/technova.webp";
 import strajkBowling from "../assets/images/strajk_bowling.webp";
 import ito from "../assets/images/ito_app.jpg";
 
-export const projectsMeta = [
+export type ProjectMeta = {
+  image: string;
+  github: string;
+  netlify?: string;
+};
+
+export const projectsMeta: ProjectMeta[] = [
   {
     image: ito,
     github: "https://github.com/MariMyr/ito.git"

@@ -4,7 +4,6 @@ import Hamburger from "hamburger-react";
 import LanguageSwitcher from "../languageswitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
-
 function HamburgerComponent() {
   const [open, setOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
