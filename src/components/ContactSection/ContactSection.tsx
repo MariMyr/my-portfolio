@@ -9,18 +9,19 @@ function ContactSection() {
   const { t } = useTranslation("contact");
 
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
 
     emailjs.sendForm(
       "service_whbbbur",  
       "template_q81tgoh",
-      e.target,
+      form,
       "eC9EyShyIYGEYZC35"
     )
     .then(() => {
       setStatus(t("statusSuccess"));
-      e.target.reset();
+      form.reset();
     })
     .catch(() => setStatus(t("statusError")));
   };

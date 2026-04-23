@@ -1,11 +1,22 @@
 import "./projectCard.css";
-import { projectsMeta } from "../../data/projectsData";
+import { projectsMeta, type ProjectMeta } from "../../data/projectsData";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+type ProjectText = {
+  title: string;
+  description: string;
+};
+
+type CardProps = {
+  project: ProjectMeta;
+  text: ProjectText;
+  t: (key: string) => string;
+};
+
 function ProjectCard() {
   const { t } = useTranslation("projects");
-  const texts = t("projects", { returnObjects: true });
+  const texts = t("projects", { returnObjects: true }) as ProjectText[];
 
   return (
     <section className="projectcard__container">
@@ -17,7 +28,7 @@ function ProjectCard() {
   );
 }
 
-function Card({ project, text, t }) {
+function Card({ project, text, t }: CardProps) {
   const [expanded, setExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 

@@ -10,7 +10,9 @@ import Hero from "../../components/hero/Hero";
 import ContactSection from "../../components/ContactSection/ContactSection";
 
 function HomePage() {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState<"light" | "dark">(
+    localStorage.getItem("theme") === "dark" ? "dark" : "light"
+  );
 
   useEffect(() => {
     const observer = new MutationObserver(() => {
@@ -27,7 +29,7 @@ function HomePage() {
   }, []);
 
 
-  const backgroundImage = theme === 'light' ? backgroundLight : backgroundDark;
+  const backgroundImage = theme === "light" ? backgroundLight : backgroundDark;
 
   return (
     <section className="mainPage">

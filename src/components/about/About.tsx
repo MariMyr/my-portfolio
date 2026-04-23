@@ -6,7 +6,7 @@ import {
   FaNodeJs,
   FaFigma,
   FaGitAlt,
-  } from "react-icons/fa";
+} from "react-icons/fa";
 import { SiAwslambda, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { useState } from "react";
 import "./about.css";
@@ -14,7 +14,13 @@ import profileLight from "../../assets/images/profile_light.webp";
 import profileDark from "../../assets/images/profile_dark.webp";
 import { useTranslation, Trans } from "react-i18next";
 
-function About({ theme }) {
+type Theme = "light" | "dark";
+
+type AboutProps = {
+  theme: Theme;
+};
+
+function About({ theme }: AboutProps) {
   const [showMore, setShowMore] = useState(false);
   const { t } = useTranslation("about");
   const profileImg = theme === "light" ? profileLight : profileDark;
@@ -58,7 +64,7 @@ function About({ theme }) {
             <SiTypescript /> TypeScript
           </li>
         </ul>
-        
+
         <p className="about__text">
           <Trans
             i18nKey="intro"
