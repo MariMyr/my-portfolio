@@ -1,8 +1,8 @@
 {
   "title": "Om mig",
-  "intro": "<0>Hej! Jag heter Mari och utbildar mig till frontendutvecklare på Folkuniversitetet i Göteborg.</0> Under mitt första år har jag fått erfarenhet inom många olika områden och tekniker.",
-  "more1": "I år bygger jag vidare på den grunden genom att fördjupa mig i molnbaserad drift med AWS, utveckling av AI-drivna webbapplikationer och fullstackutveckling med TypeScript. Jag arbetar både med frontend och backend, alltid med fokus på ren kod, användarvänlig design och agilt samarbete. Jag tycker om att skapa applikationer som inte bara fungerar väl, utan också är tillgängliga och visuellt tilltalande.",
-  "more2": "Jag söker LIA-praktik under veckorna 2–10 och 15–24 2026. Har du en ledig plats, eller känner någon jag kan kontakta, hör gärna av dig! Skicka ett <0>mail</0> eller ett meddelande på <1>LinkedIn</1>.",
+  "intro": "<0>Hej! Jag heter Mari, en webbutvecklare</0> med ett starkt fokus på att skapa skalbara och användarcentrerade applikationer. Just nu slutför jag mitt sista år på Folkuniversitetet i Göteborg och tar min examen i juni 2026.",
+  "more1": "Min tekniska resa har gjort mig till en mångsidig utvecklare med expertis inom TypeScript, React och Next.js, kompletterat med en stabil förståelse för backendsystem som Node.js och Supabase. Senast har jag finslipat mina kunskaper som praktikant på Nexer Group, där jag i ett team utvecklade en Email Builder med fokus på WebSockets för realtidsfunktionalitet.",
+  "more2": "Med en kandidatexamen i socialt arbete i grunden tillför jag ett mänskligt perspektiv till utvecklingen.Jag prioriterar tillgänglighet, ren arkitektur och empati för slutanvändaren. Nu söker jag min nästa utmaning där jag kan bidra med mina kunskaper inom fullstack-utveckling och agilt samarbete. Har du ett jobb, eller känner någon jag kan kontakta, hör gärna av dig! Skicka ett <0>mail</0> eller ett meddelande på <1>LinkedIn</1>.",
   "email": "mail",
   "linkedin": "LinkedIn",
   "stack": "Tech Stack",
